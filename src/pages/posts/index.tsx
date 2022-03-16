@@ -50,7 +50,7 @@ export default function Posts({posts: PostsBlog, page, totalPage}: PostsProps){
     } else {
       const getPosts = response.results.map( post => {
         return {
-          slug: post.id,
+          slug: post.uid,
           title: RichText.asText(post.data.title),
           description: post.data.description.find(content => content.type === 'paragraph')?.text ?? '',
           cover: post.data.cover.url,
