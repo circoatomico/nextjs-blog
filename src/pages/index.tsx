@@ -45,7 +45,7 @@ export default function Home({content}: ContentProps) {
           </a>
         </section>
 
-        <Image
+        <img
             src="/images/banner-conteudos.png"
             alt="Conteúdos Sujeito Programador"
         />
@@ -59,13 +59,13 @@ export default function Home({content}: ContentProps) {
           <span>{content.mobileContent}</span>
         </section>
 
-        <Image src={content.mobileBanner} alt="Conteúdos desenvolvimento de apps" />
+        <img src={content.mobileBanner} alt="Conteúdos desenvolvimento de apps" />
       </div>
 
       <hr className={styles.divisor} />
 
       <div className={styles.sectionContent}>
-        <Image src={content.webBanner} alt="Conteúdos desenvolvimento de aplicacoes web" />
+        <img src={content.webBanner} alt="Conteúdos desenvolvimento de aplicacoes web" />
 
         <section>
           <h2>{content.webTitle}</h2>

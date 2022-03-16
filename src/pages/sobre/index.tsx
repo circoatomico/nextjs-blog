@@ -1,7 +1,6 @@
 import { GetStaticProps } from "next";
 
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from './styles.module.scss';
 
 import { getPrismicClient } from '../../services/prismic';
@@ -53,7 +52,7 @@ export default function Sobre({ content }: ContentProps){
             </a>
           </section>
 
-          <Image
+          <img
             src={content.banner}
             alt="Sobre Sujeito Programador"
           />
